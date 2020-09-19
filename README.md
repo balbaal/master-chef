@@ -1,6 +1,8 @@
 ## General info
 API Provided by:
 * [Rapid API](https://rapidapi.com/brianiswu/api/recipe-puppy)
+Assets:
+* [unDraw](https://undraw.co/)
 
 ## Technologies
 Project is created with:
