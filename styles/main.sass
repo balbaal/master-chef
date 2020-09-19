@@ -1,7 +1,7 @@
-$mandys_pink: #F5BDB6
-$hint_of_red: #FDFCFC
-$cod_gray: #161211
-$heather: #AFBCCA
+$mandys_pink: #FAE0DC
+$hint_of_red: #F8F8F7
+$cod_gray: #000000
+$heather: #D2D2D2
 $fuscous_gray: #55504D
 $americano: #846F6B
 
@@ -26,6 +26,7 @@ $americano: #846F6B
     align-items: center
     justify-content: space-between
     padding: 0 50px
+    margin-bottom: 50px
 
     &__content
       color: $cod_gray
@@ -51,3 +52,23 @@ $americano: #846F6B
       &__img
         width: auto
         height: auto
+
+  .searching-tab
+    &__form
+      &__wrap
+        background-color: $hint_of_red
+        border-radius: 5px
+        padding: 20px
+        display: flex
+        align-items: center
+
+        &__icon
+          margin-right: 20px
+
+        &__input
+          background-color: $hint_of_red
+          border: none
+          outline: none
+          color: $heather
+          font-size: 16px
+          width: 100%

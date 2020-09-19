@@ -4,21 +4,22 @@
   box-sizing: border-box; }
   * a {
     text-decoration: none;
-    color: #161211; }
+    color: #000000; }
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto; }
   .container .hero {
-    background-color: #F5BDB6;
+    background-color: #FAE0DC;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px; }
+    padding: 0 50px;
+    margin-bottom: 50px; }
     .container .hero__content {
-      color: #161211; }
+      color: #000000; }
       .container .hero__content__title {
         font-size: 46px;
         font-weight: bold;
@@ -38,3 +39,18 @@
       .container .hero__figure__img {
         width: auto;
         height: auto; }
+  .container .searching-tab__form__wrap {
+    background-color: #F8F8F7;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center; }
+    .container .searching-tab__form__wrap__icon {
+      margin-right: 20px; }
+    .container .searching-tab__form__wrap__input {
+      background-color: #F8F8F7;
+      border: none;
+      outline: none;
+      color: #D2D2D2;
+      font-size: 16px;
+      width: 100%; }
