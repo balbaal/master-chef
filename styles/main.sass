@@ -9,6 +9,7 @@ $americano: #846F6B
   padding: 0
   margin: 0
   box-sizing: border-box
+  font-family: 'Roboto', sans-serif
 
   a
     text-decoration: none
@@ -19,6 +20,9 @@ $americano: #846F6B
   max-width: 1200px
   margin: 0 auto
 
+  section
+    margin-bottom: 50px
+
   .hero
     background-color: $mandys_pink
     display: flex
@@ -26,10 +30,10 @@ $americano: #846F6B
     align-items: center
     justify-content: space-between
     padding: 0 50px
-    margin-bottom: 50px
 
     &__content
       color: $cod_gray
+      width: 250px
 
       &__title
         font-size: 46px
@@ -37,11 +41,15 @@ $americano: #846F6B
         margin-bottom: 10px
       &__description
         font-size: 16px
-        font-weight: lighter
+        font-weight: 400
         margin-bottom: 20px
       &__button
         font-size: 16px
         font-weight: bold
+
+        i
+          margin-left: 8px
+          font-size: 18px
 
     &__figure
       height: 600px
@@ -64,11 +72,12 @@ $americano: #846F6B
 
         &__icon
           margin-right: 20px
+          margin-top: -3px
+          font-size: 18px
 
         &__input
           background-color: $hint_of_red
           border: none
           outline: none
-          color: $heather
           font-size: 16px
           width: 100%
