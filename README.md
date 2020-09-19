@@ -11,7 +11,7 @@ Project is created with:
 To run this project, install it locally using npm:
 ```
 $ cd master-chef
-$ npm install
+$ npm install && npm install -g live-server
 $ npm run compile:sass
 $ live-server
 ```
