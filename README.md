@@ -4,6 +4,11 @@ API Provided by:
 Assets:
 * [unDraw](https://undraw.co/)
 
+Algorithm Test (Two Sums):
+```
+Check folder: js/algorithm.js
+```
+
 ## Technologies
 Project is created with:
 * [SASS](https://sass-lang.com/)
