@@ -83,6 +83,11 @@ $americano: #846F6B
           width: 100%
 
   .recipe-list
+    display: grid
+    grid-row-gap: 50px
+    grid-column-gap: 30px
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr))
+
     &__card
       &__figure
         height: 180px
@@ -97,7 +102,7 @@ $americano: #846F6B
           font-size: 28px
           font-weight: 500
           padding: 15px 0
-          
+
         &__info
           display: flex
           flex-direction: row
