@@ -1,3 +1,6 @@
+import api from "./api.js";
+
+const recipeListElement = document.querySelector(".recipe-list");
 const formElement = document.querySelector("form");
 const inputFormElement = document.querySelector("input");
 
@@ -8,4 +11,10 @@ formElement.addEventListener("submit", (e) => {
   searchValue = inputFormElement.value;
 
   console.log("searchValue :>> ", searchValue);
+
+  let query = {
+    value: searchValue,
+  };
+
+  api(query);
 });
