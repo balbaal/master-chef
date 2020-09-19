@@ -1,6 +1,5 @@
-import api from "./api.js";
+import fetchApi from "./api.js";
 
-const recipeListElement = document.querySelector(".recipe-list");
 const formElement = document.querySelector("form");
 const inputFormElement = document.querySelector("input");
 
@@ -16,5 +15,5 @@ formElement.addEventListener("submit", (e) => {
     value: searchValue,
   };
 
-  api(query);
+  fetchApi(query);
 });
