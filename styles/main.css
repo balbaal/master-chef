@@ -46,6 +46,19 @@
       .container .hero__figure__img {
         width: auto;
         height: auto; }
+    @media screen and (max-width: 768px) {
+      .container .hero {
+        text-align: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0 -10%;
+        justify-content: center;
+        margin-bottom: 50px; }
+        .container .hero__content {
+          padding: 40px 15px;
+          width: 100%; }
+        .container .hero__figure {
+          display: none; } }
   .container .searching-tab__form__wrap {
     background-color: #F8F8F7;
     border-radius: 15px;

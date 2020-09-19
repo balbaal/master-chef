@@ -62,6 +62,21 @@ $americano: #846F6B
         width: auto
         height: auto
 
+    @media screen and ( max-width: 768px )
+      text-align: center
+      flex-direction: column
+      height: 100vh
+      margin: 0 -10%
+      justify-content: center
+      margin-bottom: 50px
+
+      &__content
+        padding: 40px 15px
+        width: 100%
+
+      &__figure
+        display: none
+
   .searching-tab
     &__form
       &__wrap
