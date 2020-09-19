@@ -11,6 +11,9 @@ const object = {
 const api = async (query) => {
   console.log("query :>> ", query);
 
+  const recipeListElement = document.querySelector(".recipe-list");
+  let templateCard = "";
+
   try {
     const resRecipeJSON = await fetch(
       `https://${RAPIDAPI_HOST}/?p=1&i=&q=${query.value}`,
@@ -19,9 +22,6 @@ const api = async (query) => {
 
     const resRecipe = await resRecipeJSON.json();
     console.log("resRecipe :>> ", resRecipe.results);
-
-    const recipeListElement = document.querySelector(".recipe-list");
-    let templateCard = "";
 
     if (resRecipe.results.length > 0) {
       resRecipe.results.forEach((item, i) => {
@@ -62,6 +62,7 @@ const api = async (query) => {
     }
   } catch (error) {
     console.log("error :>> ", error);
+    recipeListElement.innerHTML = `<h1 class="recipe-list__error">Something wrong !!!</h1>`;
   }
 };
 
