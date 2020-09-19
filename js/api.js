@@ -58,7 +58,7 @@ const api = async (query) => {
         recipeListElement.innerHTML = templateCard;
       });
     } else {
-      recipeListElement.innerHTML = `<h1 style="text-align: center">${query.value} tidak ditemukan !!!</h1>`;
+      recipeListElement.innerHTML = `<h1 class="recipe-list__not-found"><span>${query.value}</span> tidak ditemukan !!!</h1>`;
     }
   } catch (error) {
     console.log("error :>> ", error);

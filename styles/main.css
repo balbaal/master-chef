@@ -83,6 +83,10 @@
     grid-row-gap: 50px;
     grid-column-gap: 30px;
     grid-template: auto/repeat(auto-fit, minmax(300px, 1fr)); }
+    .container .recipe-list__not-found {
+      text-align: center; }
+      .container .recipe-list__not-found span {
+        color: #FAE0DC; }
     .container .recipe-list__card__figure {
       height: 180px; }
       .container .recipe-list__card__figure__img {
