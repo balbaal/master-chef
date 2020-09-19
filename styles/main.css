@@ -2,10 +2,39 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+  * a {
+    text-decoration: none;
+    color: #161211; }
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto; }
   .container .hero {
-    background-color: #F5BDB6; }
+    background-color: #F5BDB6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px; }
+    .container .hero__content {
+      color: #161211; }
+      .container .hero__content__title {
+        font-size: 46px;
+        font-weight: bold;
+        margin-bottom: 10px; }
+      .container .hero__content__description {
+        font-size: 16px;
+        font-weight: lighter;
+        margin-bottom: 20px; }
+      .container .hero__content__button {
+        font-size: 16px;
+        font-weight: bold; }
+    .container .hero__figure {
+      height: 600px;
+      position: relative;
+      overflow: hidden;
+      padding-top: 40px; }
+      .container .hero__figure__img {
+        width: auto;
+        height: auto; }

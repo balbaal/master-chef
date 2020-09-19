@@ -10,6 +10,10 @@ $americano: #846F6B
   margin: 0
   box-sizing: border-box
 
+  a
+    text-decoration: none
+    color: $cod_gray
+
 .container
   width: 90%
   max-width: 1200px
@@ -17,3 +21,33 @@ $americano: #846F6B
 
   .hero
     background-color: $mandys_pink
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    padding: 0 50px
+
+    &__content
+      color: $cod_gray
+
+      &__title
+        font-size: 46px
+        font-weight: bold
+        margin-bottom: 10px
+      &__description
+        font-size: 16px
+        font-weight: lighter
+        margin-bottom: 20px
+      &__button
+        font-size: 16px
+        font-weight: bold
+
+    &__figure
+      height: 600px
+      position: relative
+      overflow: hidden
+      padding-top: 40px
+
+      &__img
+        width: auto
+        height: auto
